@@ -20,7 +20,7 @@ public class TestClass extends abstractClassTest {
         haa h = new haa() {
             @Override
             public void menim() {
-                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+                System.out.println("Has");
             }
 
             @Override
