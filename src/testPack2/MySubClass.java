@@ -13,10 +13,19 @@ public class MySubClass extends MySuper{
     
     
     @Override
-    public void myMethod(){
+    public void myMethod() {
         super.myMethod();
         System.out.println("SubClass");
     }
+    
+    
+    //subtype return qebul olunandi
+    @Override
+    public MySubClass myReturnMethod(){
+    
+    return new MySubClass();
+    }
+    
     
     
     //overload. parametr yazmasaydim ve return qoysaydim overload sayilmaz ve sehv vererdi.
@@ -29,6 +38,7 @@ public class MySubClass extends MySuper{
     }
     public void myMethod(int b, String a, double c){
         System.out.println(b+a+c);
+        return;//bunu ede bilerem :) amma menasizdi hecne qayitmayacaqsa,
     }
     
     
@@ -43,11 +53,12 @@ public class MySubClass extends MySuper{
         MySuper my = new MySubClass();
         MySubClass my2 = new MySubClass();
         
+        my2.myReturnMethod();
         my.myMethod();
         my2.myMethod();
         my2.MyMethod();
-        my2.myMethod(3, "camiw",4.0);
-        my2.myMethod("camiw", 3, 4.0);
+        my2.myMethod(3, "hass",4.0);
+        my2.myMethod("hass", 3, 4.0);
         
     }
     

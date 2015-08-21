@@ -9,10 +9,30 @@ package testPack2;
  *
  * @author user
  */
-public class MySuper {
+public class MySuper implements MyInterface {
+    
     
     protected void myMethod() {
         System.out.println("Super class My Method");   
     }
+    
+    public MySuper myReturnMethod(){
+    
+        return new MySuper();
+    }
+
+    @Override
+    public void myInterfaceMethod() {
+        System.out.println("Interface Method");
+    }
+
+    @Override
+    public void Metodum() {
+        
+    }
+
+   
+
+    
     
 }

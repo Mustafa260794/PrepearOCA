@@ -9,10 +9,14 @@ package testPack2;
  *
  * @author user
  */
-public class MyTestClass {
+public class MyTestClass extends MySubClass{
     public static void main(String[] args) {
-        MySuper my = new MySubClass();
-        
+        MySuper my =(MySuper)/*<--burda cast olmasada olar*/ new MySubClass();
+        System.out.println((new MyTestClass() instanceof MyInterface));
         my.myMethod();
+        ((MySubClass)my).myMethod(3);
+        my.myInterfaceMethod();
+        
+//        MySubClass mmm =(MySubClass) new MySuper();
     }
 }
