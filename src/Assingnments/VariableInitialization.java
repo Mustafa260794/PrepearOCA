@@ -5,6 +5,8 @@
  */
 package Assingnments;
 
+import java.awt.Dimension;
+
 /**
  *
  * @author Mustafa
@@ -22,10 +24,14 @@ public class VariableInitialization {
         v.showVariables();
         System.out.println("\n");
         
-        String c = "Salam";
-        String s = c;
+        Dimension c = new Dimension(10, 5);
         
-        c="Hahaha";
-        System.out.println(c+"   "+s);
+        System.out.println(c.height + " Heigh");
+        
+        Dimension s = c;
+        
+        s.height=100;
+        
+        System.out.println(c.height+"<-- c.heigh    s.heigh= "+s.height);
     }
 }
