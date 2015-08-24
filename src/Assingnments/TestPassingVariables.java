@@ -6,6 +6,7 @@
 package Assingnments;
 
 import java.awt.Dimension;
+import java.util.Date;
 
 /**
  *
@@ -18,6 +19,13 @@ public class TestPassingVariables {
         System.out.println("metod daxilinde uzunluq: "+d.height);
     }
     
+    
+    public void deyisme(int a){
+    a++;
+        System.out.println("Metod daxilinde primitivin qiymeti: "+a);
+    }
+    
+    
     static public void main(String... meherrem){
         Dimension dm = new Dimension(10,20);
         System.out.println("Obyekt tanimlanan anda uzunluq: "+dm.height);
@@ -25,6 +33,16 @@ public class TestPassingVariables {
         TestPassingVariables t = new TestPassingVariables();
         t.deyisme(dm);
         System.out.println("Metoddan cixdiqdab sonra uzunluq: " +dm.height);
+        
+        
+        int a = 4;
+        System.out.println("\n\ntanimlanma adininda primitivin qiymeti: "+a);
+        
+        t.deyisme(a);
+        System.out.println("Metoddan cixdiqdan sonra primitivin qiymeti: "+a);
+        
+        System.gc();
+       
     }
    
     
