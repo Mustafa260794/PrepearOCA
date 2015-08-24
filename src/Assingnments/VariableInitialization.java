@@ -20,5 +20,12 @@ public class VariableInitialization {
     public static void main(String[] args) {
         VariableInitialization v = new VariableInitialization();
         v.showVariables();
+        System.out.println("\n");
+        
+        String c = "Salam";
+        String s = c;
+        
+        c="Hahaha";
+        System.out.println(c+"   "+s);
     }
 }
