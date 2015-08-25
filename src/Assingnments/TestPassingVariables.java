@@ -6,7 +6,6 @@
 package Assingnments;
 
 import java.awt.Dimension;
-import java.util.Date;
 
 /**
  *
@@ -41,8 +40,6 @@ public class TestPassingVariables {
         t.deyisme(a);
         System.out.println("Metoddan cixdiqdan sonra primitivin qiymeti: "+a);
         
-        System.gc();
-       
     }
    
     
