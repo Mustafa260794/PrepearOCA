@@ -44,7 +44,7 @@ public class TestArrays extends BaslangicTest {
     }
 
     public static void yoxlama(int[] array) {
-        System.out.println("zic biz");
+        System.out.println("ciz biz");
     }
 
 }
